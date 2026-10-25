@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economia Virtual do RuneScape | Projeto IEFP</title>
+</head>
+<body>
+    <header>
+        <div class="header-overlay">
+            <span class="badge">Projeto Final IEFP • Análise de Dados</span>
+            <h1>Economia dos Mercados Virtuais</h1>
+            <p>Estudo de Caso: Mercado e Grand Exchange do Old School RuneScape</p>
+            <div class="author-info">Desenvolvido por <strong>Gonçalo Minhó</strong></div>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <a href="#video">Vídeo Explicativo</a>
+        <a href="#dashboard">Dashboard Interativo</a>
+        <a href="#insights">Galeria de Insights</a>
+        <a href="#analise">Análise Crítica</a>
+    </nav>
+
+    <main class="container">
+
+        <!-- Secção 1: Vídeo Explicativo -->
+        <section id="video" class="card">
+            <h2>01. Apresentação em Vídeo (60-90s)</h2>
+            <p class="section-desc">Demonstração da recolha de dados e análise dos indicadores económicos do Grand Exchange em sobreposição a gameplay real.</p>
+            
+            <div class="media-container video-wrapper">
+                <!-- Se tiveres o ficheiro .mp4 local: -->
+                <video controls poster="assets/imagens/kpi-dashboard.png">
+                    <source src="assets/Video explicativo.mp4" type="video/mp4">
+                    O seu navegador não suporta a reprodução de vídeo.
+                </video>
+
+                <!-- NOTA: Se preferires usar o EMBED do Canva/Clipchamp/YouTube, substitui a tag <video> acima pelo <iframe> do teu vídeo. -->
+            </div>
+        </section>
+
+        <!-- Secção 2: Dashboard do Looker Studio -->
+        <section id="dashboard" class="card">
+            <h2>02. Dashboard Interativo (Looker Studio)</h2>
+            <p class="section-desc">Explore a variação temporal de preços, limites de High Alchemy e flutuações de mercado em tempo real.</p>
+            
+            <div class="media-container iframe-wrapper">
+                <!-- SUBSTITUI O LINK ABAIXO PELO EMBED DO TEU LOOKER STUDIO (Ficheiro > Incorporar relatório) -->
+                <iframe width="600" height="450" src="https://datastudio.google.com/embed/reporting/328ccaf8-b377-4825-a8e6-0fefc2d3def3/page/G7nBG" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+            </div>
+            
+            <div class="dashboard-actions">
+                <a href="https://datastudio.google.com/s/kJsC_a4H7bw" target="_blank" class="btn-rs">Abrir Dashboard em Fullscreen</a>
+            </div>
+        </section>
+
+        <!-- Secção 3: Galeria de Evidências / Infografias (Photopea) -->
+        <section id="insights" class="card">
+            <h2>03. Galeria de Métricas & Análises Visuais</h2>
+            <p class="section-desc">Evidências da recolha e tratamento estatístico no Excel e Looker Studio.</p>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/kpi-1.png" alt="KPIs Globais do Mercado">
+                    <div class="gallery-caption">
+                        <h4>Métricas Principais (KPIs)</h4>
+                        <p>Visão geral dos preços médios e maiores oscilações diárias.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/grafico-linhas.png" alt="Evolução Temporal de Preços">
+                    <div class="gallery-caption">
+                        <h4>Evolução Temporal</h4>
+                        <p>Histórico de preços ao longo dos anos para itens selecionados.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/grafico-arbitragem.png" alt="Análise de Margem de Alchemy">
+                    <div class="gallery-caption">
+                        <h4>Margem de Arbitragem</h4>
+                        <p>Comparativo entre valor do Grand Exchange e conversão por High Alchemy.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secção 4: Análise Crítica dos Dados (Cumprindo o limite de <300 palavras do IEFP) -->
+        <section id="analise" class="card">
+            <h2>04. Análise Crítica dos Dados</h2>
+            <div class="text-content">
+                <p>
+                    A análise dos dados do <em>Grand Exchange</em> do Old School RuneScape demonstra como os mercados virtuais replicam princípios económicos do mundo real, impulsionados pela oferta, procura e utilidade dos bens. Através do tratamento e limpeza de dados no Excel e posterior visualização no Looker Studio, foi possível identificar padrões claros de volatilidade e oportunidades de arbitragem[cite: 3, 4].
+                </p>
+                <p>
+                    Um dos achados mais significativos do estudo reside na relação entre o preço de mercado dos itens e o seu valor fixo de <em>High Alchemy</em>. Feitiços de conversão mágica atuam como um "preço chão" (<em>price floor</em>) na economia do jogo. Itens como a <em>Black Longsword</em> apresentaram margens positivas de arbitragem (+201 GP em média), significando que a sua conversão direta em moedas gera lucro garantido aos jogadores, sustentando a procura pelo item[cite: 3].
+                </p>
+                <p>
+                    Por outro lado, bens de consumo e materiais como o <em>Uncut Diamond</em> mantêm preços de mercado substancialmente superiores ao seu valor de conversão mágica (com margens fortemente negativas de -8.574 GP), demonstrando que o seu valor é suportado pela utilidade prática no jogo (como o treino de <em>Crafting</em>) e não pela conversão em ouro[cite: 3]. 
+                </p>
+                <p>
+                    Em conclusão, o acompanhamento de métricas de dispersão e variação diária no dashboard permite prever tendências de mercado e tomadas de decisão estratégicas, evidenciando o valor prático da ciência e literacia de dados aplicada a ambientes virtuais complexos[cite: 2, 3].
+                </p>
+                <p>Fonte: https://github.com/sjqtentacles/Runescape-Grand-Exchange-Market-Data/blob/master/Runescape_Market_Data.csv.zip</p>
+            </div>
+        </section>
+
+        <section id="video" class="card">
+            <h2>05. Behind the Scenes</h2>
+            <p class="section-desc">Aqui está a parte behind the scenes do nosso projeto.</p>
+            
+            <a href="https://www.youtube.com/watch?v=Ce8UG48gfO8" target="_blank"><img src="assets/Runescape IEFP Imagen.png" alt="Thumbnail do Vídeo" style="width: 100%; height: auto;"></a>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <p>Projeto Desenvolvido no Âmbito da Formação IEFP — <strong>Análise de Dados e Comunicação Digital</strong></p>
+        <p class="copyright">© 2026 Gonçalo Minhó. Todos os direitos reservados. Design inspirado em UI RPG/RuneScape Theme.</p>
+    </footer>
+
+</body>
+</html>
